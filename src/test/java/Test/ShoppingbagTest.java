@@ -110,6 +110,49 @@ public class ShoppingbagTest extends BaseTest {
         new WebDriverWait(driver,6500).until(ExpectedConditions.visibilityOf(oneproductweb));
         functions.validatetext(oneproductweb,oneproductbag);
 
+        //go back on the shopping bag page
+
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement shoppingbag1=driver.findElement(By.xpath("//i[@class='fa fa-shopping-cart']"));
+        functions.clickmethod(shoppingbag1);
+
+
+
+        WebElement watchpriceweb=driver.findElement(By.xpath("//span[@class='order-summary-item-value text-right price']"));
+        String watchpricetext = watchpriceweb.getText();
+        String priceText = watchpricetext.split("$")[1].trim(); //splitting numeric characters with the currency characters
+        double priceVal = Double.parseDouble(priceText);
+        System.out.print(priceVal);
+
+
+//        for (int index=0; index<3; index ++) {
+//            List<WebElement> quantity=driver.findElements(By.xpath("//select[@alt='Select Quantity']"));
+//            WebElement totalpriceweb=driver.findElement(By.xpath("//span[@class='order-summary-item-value text-right price']"));
+//            for (int contor=0; contor<quantity.size(); contor++) {
+//
+//                if(contor==1)
+//                {
+//                    functions.clickmethod(quantity.get(contor));
+//                    WebElement updatebutton=driver.findElement(By.xpath("//button[@class='btn btn-primary btn-update pull-right text-uppercase']"));
+//                    functions.clickmethod(updatebutton);
+//                    price=price+price;
+//                    System.out.println(price);
+//
+//
+//
+//
+//                    break;
+//                }
+//            }
+
+
+        }
+
+
 
 
 
@@ -124,4 +167,4 @@ public class ShoppingbagTest extends BaseTest {
 
 
     }
-}
+

@@ -55,35 +55,63 @@ public class SignInTest extends BaseTest {
             String[] parseEmail = emailvalue.split(",");
             String[] parsePassword = passwordvalue.split(",");
 
-
-
-//            //sign out
-//
-//            WebElement myaccountButton1=driver.findElement(By.xpath("//div[@class='dropdown dropdown-mega dropdown-account text-center pull-left utilLink']//span[contains(text(),'My Account')]"));
-//            functions.hovermethod(myaccountButton1,driver);
-//            Actions action1=new Actions(driver);
-//            action.moveToElement(myaccountButton1).build().perform();
-//
-//            WebElement signoutbutton=driver.findElement(By.xpath("//a[@class='btn-action-signout']"));
-//            functions.clickmethod(signoutbutton);
-//
-//            //sign in again
-//
-//            WebElement myaccountButton2=driver.findElement(By.xpath("//div[@class='dropdown dropdown-mega dropdown-account text-center pull-left utilLink']//span[contains(text(),'My Account')]"));
-//            functions.hovermethod(myaccountButton2,driver);
-//            Actions action2=new Actions(driver);
-//            action.moveToElement(myaccountButton2).build().perform();
-//
-//            WebElement accountbutton1=driver.findElement(By.xpath("//a[@data-signin-path='/content/fossil/us/en/sign-in.html']"));
-//            new WebDriverWait(driver,10000).until(ExpectedConditions.visibilityOf(accountbutton1));
-//            functions.clickmethod(accountbutton1);
-
-
-
-
-            //1.email and password that were never registrated
+            //7. valid email and password
 
             if (index == 0) {
+                emailvalue = parseEmail[5];
+                passwordvalue = parsePassword[5];
+                emailfield.sendKeys(emailvalue);
+                passwordfield.sendKeys(passwordvalue);
+                signinbutton.click();
+
+            }
+
+            //validate profile page
+
+            String expectedprofile=BaseTest.getvalue("profilepagetitle");
+            new WebDriverWait(driver,6500).until(ExpectedConditions.titleIs(BaseTest.getvalue("profilepagetitle")));
+            functions.validatepagetitle(expectedprofile,driver);
+
+
+
+            //sign out
+
+            WebElement myaccountButton1=driver.findElement(By.xpath("//div[@class='dropdown dropdown-mega dropdown-account text-center pull-left utilLink']//span[contains(text(),'My Account')]"));
+            functions.hovermethod(myaccountButton1,driver);
+            Actions action1=new Actions(driver);
+            action.moveToElement(myaccountButton1).build().perform();
+
+            WebElement signoutbutton=driver.findElement(By.xpath("//a[@class='btn-action-signout']"));
+            functions.clickmethod(signoutbutton);
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            //sign in again
+
+            WebElement myaccountButton2=driver.findElement(By.xpath("//div[@class='dropdown dropdown-mega dropdown-account text-center pull-left utilLink']//span[contains(text(),'My Account')]"));
+            functions.hovermethod(myaccountButton2,driver);
+            Actions action2=new Actions(driver);
+            action.moveToElement(myaccountButton2).build().perform();
+
+            WebElement accountbutton1=driver.findElement(By.xpath("//a[@data-signin-path='/content/fossil/us/en/sign-in.html']"));
+            new WebDriverWait(driver,10000).until(ExpectedConditions.visibilityOf(accountbutton1));
+            functions.clickmethod(accountbutton1);
+
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            //invalid cases
+            //1.email and password that were never registrated
+
+            if (index == 1) {
                 emailvalue = parseEmail[1];
                 passwordvalue = parsePassword[1];
                 emailfield.sendKeys(emailvalue);
@@ -99,7 +127,7 @@ public class SignInTest extends BaseTest {
 
             //2. all fields are empty
 
-            if (index == 1) {
+            if (index == 2) {
                 emailvalue = parseEmail[2];
                 passwordvalue = parsePassword[2];
                 emailfield.sendKeys(emailvalue);
@@ -115,7 +143,7 @@ public class SignInTest extends BaseTest {
 
             //3. special characters for all fields
 
-            if (index == 2) {
+            if (index == 3) {
                 emailvalue = parseEmail[3];
                 passwordvalue = parsePassword[3];
                 emailfield.sendKeys(emailvalue);
@@ -131,7 +159,7 @@ public class SignInTest extends BaseTest {
 
             //4. invalid email and password
 
-            if (index == 3) {
+            if (index == 4) {
                 emailvalue = parseEmail[4];
                 passwordvalue = parsePassword[4];
                 emailfield.sendKeys(emailvalue);
@@ -151,7 +179,7 @@ public class SignInTest extends BaseTest {
 
             //5. invalid email and valid password
 
-            if (index == 4) {
+            if (index == 5) {
                 emailvalue = parseEmail[4];
                 passwordvalue = parsePassword[0];
                 emailfield.sendKeys(emailvalue);
@@ -167,7 +195,7 @@ public class SignInTest extends BaseTest {
 
             //6. valid email and invalid password
 
-            if (index == 5) {
+            if (index == 6) {
                 emailvalue = parseEmail[0];
                 passwordvalue = parsePassword[4];
                 emailfield.sendKeys(emailvalue);
@@ -181,22 +209,7 @@ public class SignInTest extends BaseTest {
 
             }
 
-            //7. valid email and password
 
-            if (index == 6) {
-                emailvalue = parseEmail[0];
-                passwordvalue = parsePassword[0];
-                emailfield.sendKeys(emailvalue);
-                passwordfield.sendKeys(passwordvalue);
-                signinbutton.click();
-
-            }
-
-            //validate profile page
-
-            String expectedprofile=BaseTest.getvalue("profilepagetitle");
-            new WebDriverWait(driver,6500).until(ExpectedConditions.titleIs(BaseTest.getvalue("profilepagetitle")));
-            functions.validatepagetitle(expectedprofile,driver);
 
 
         }
