@@ -59,13 +59,13 @@ public class ProductTest extends BaseTest {
 
         //validez ca sunt pe pagina de produs
 
-//        String expectedproduct=BaseTest.getvalue("productpagetitle");
-//        functions.validatepagetitle(expectedproduct,driver);
+        String expectedproduct=BaseTest.getvalue("productpagetitle");
+        functions.validatepagetitle(expectedproduct,driver);
 
         WebElement engravemebutton=driver.findElement(By.xpath("//button[@class=\"btn btn-default pdp-margin-bottom--small btn-product-customization\"]"));
         functions.clickmethod(engravemebutton);
 
-//        //validez textul popup make it yours
+        //validez textul popup make it yours
 
         WebElement popupmakeityours=driver.findElement(By.xpath("//h4[contains(text(), \"Make it Yours\")]"));
         String expectedmessage1=BaseTest.getvalue("popuptitle");
@@ -81,7 +81,7 @@ public class ProductTest extends BaseTest {
         //validez mesajul de eroare
 
         String mesajeroare=BaseTest.getvalue("mesajeroarefieldgravare");
-        WebElement message=driver.findElement(By.xpath("//div[@id='parsley-id-22']/span[@class='input-message parsley-required']"));
+        WebElement message=driver.findElement(By.xpath("//span[contains(text(), 'This field is required.')]"));
         functions.validatetext(message,mesajeroare);
 
         //field completat cu caractere speciale
@@ -116,22 +116,22 @@ public class ProductTest extends BaseTest {
 
         WebElement previewbutton=driver.findElement(By.xpath("//button[@class='btn btn-default btn-block btn-customization--preview']"));
         functions.clickmethod(previewbutton);
-//
+
 //        //validez imaginea gravata
-//
+
         WebElement imagewebelement = driver.findElement(By.xpath("//div[@class='item item-customization-preview active']/img[@class='img-responsive']"));
         functions.displayedmethod(imagewebelement);
 
         //adaug gravarea pe produs
 
         functions.clickmethod(addengravingbutton);
-//
+
 //        //validez ca sunt inca pe pagina de produs
-//
-//        functions.validatepagetitle(expectedproduct,driver);
-//
+
+        functions.validatepagetitle(expectedproduct,driver);
+
 //        //validez mesajul de gravare cum ca a fost adaugat
-//
+
         String mesajgravare=BaseTest.getvalue("mesajgravareadugata");
         WebElement mesajgravareweb=driver.findElement(By.xpath("//span[@class='btn-product-customization--success-message']"));
         new WebDriverWait(driver,6500).until(ExpectedConditions.visibilityOf(mesajgravareweb));

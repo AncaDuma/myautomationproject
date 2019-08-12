@@ -102,12 +102,6 @@ public class SignInTest extends BaseTest {
             functions.clickmethod(accountbutton1);
 
 
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
             //invalid cases
             //1.email and password that were never registrated
 

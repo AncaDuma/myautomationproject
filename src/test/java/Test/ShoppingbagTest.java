@@ -2,6 +2,7 @@ package Test;
 
 import help.BaseTest;
 import help.Helpermethods;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -62,10 +63,6 @@ public class ShoppingbagTest extends BaseTest {
 
         //validate empty shopping bag and 0 price on the shopping bag page
 
-//        String emptybag2=BaseTest.getvalue("0itembag");
-//        WebElement emptybagweb2=driver.findElement(By.xpath("//span[@class='text-accent']"));
-//        new WebDriverWait(driver,6500).until(ExpectedConditions.visibilityOf(emptybagweb2));
-//        functions.validatetext(emptybagweb2,emptybag2);
 
         for (int index=0; index<5; index++) {
 
@@ -120,34 +117,44 @@ public class ShoppingbagTest extends BaseTest {
         WebElement shoppingbag1=driver.findElement(By.xpath("//i[@class='fa fa-shopping-cart']"));
         functions.clickmethod(shoppingbag1);
 
+        //convert string in double
 
-
-        WebElement watchpriceweb=driver.findElement(By.xpath("//span[@class='order-summary-item-value text-right price']"));
+        WebElement watchpriceweb=driver.findElement(By.xpath("//div[@class='col-xs-12 col-sm-4']/p/span/span"));
+        new WebDriverWait(driver,6500).until(ExpectedConditions.visibilityOf(watchpriceweb));
         String watchpricetext = watchpriceweb.getText();
-        String priceText = watchpricetext.split("$")[1].trim(); //splitting numeric characters with the currency characters
-        double priceVal = Double.parseDouble(priceText);
+        String priceAfterSplit=watchpricetext.substring(1);
+        double priceVal = Double.parseDouble(priceAfterSplit);
         System.out.print(priceVal);
 
+        for (int index=0; index<10; index ++) {
+            List<WebElement> quantityweb=driver.findElements(By.xpath("//select[@alt='Select Quantity']/option"));
 
-//        for (int index=0; index<3; index ++) {
-//            List<WebElement> quantity=driver.findElements(By.xpath("//select[@alt='Select Quantity']"));
-//            WebElement totalpriceweb=driver.findElement(By.xpath("//span[@class='order-summary-item-value text-right price']"));
-//            for (int contor=0; contor<quantity.size(); contor++) {
-//
-//                if(contor==1)
-//                {
-//                    functions.clickmethod(quantity.get(contor));
-//                    WebElement updatebutton=driver.findElement(By.xpath("//button[@class='btn btn-primary btn-update pull-right text-uppercase']"));
-//                    functions.clickmethod(updatebutton);
-//                    price=price+price;
-//                    System.out.println(price);
-//
-//
-//
-//
-//                    break;
-//                }
-//            }
+            if (index ==1) {
+                functions.clickmethod(quantityweb.get(1));
+                WebElement updatebutton=driver.findElement(By.xpath("//button[@class='btn btn-primary btn-update pull-right text-uppercase']"));
+                functions.clickmethod(updatebutton);
+                double sum=priceVal+priceVal;
+
+                try {
+                    Thread.sleep(1500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                WebElement totalprice=driver.findElement(By.xpath("//span[@class='order-summary-item-value text-right price']"));
+                new WebDriverWait(driver,10000).until(ExpectedConditions.visibilityOf(totalprice));
+                String actualprice=totalprice.getText();
+                String updatedprice="$"+sum;
+
+                Assert.assertEquals(updatedprice,actualprice);
+            }
+
+
+
+        }
+
+
+
 
 
         }

@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2a87fcbd-1021-4bdb-a903-27f7c19cac22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/ProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test/ShoppingbagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/ShoppingbagTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test/SignInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/SignInTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Inputdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Inputdata.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/ProductTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/ProductTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/ShoppingbagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/ShoppingbagTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/help/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="480">
               <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -44,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Test/ShoppingbagTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="134" column="68" lean-forward="true" selection-start-line="134" selection-start-column="68" selection-end-line="134" selection-end-column="68" />
+            <state relative-caret-position="-704">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Test/ProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="52" column="57" lean-forward="true" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+            <state relative-caret-position="124">
+              <caret line="180" selection-start-line="180" selection-end-line="180" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/Inputdata.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
+            <state relative-caret-position="224">
+              <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -77,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/help/Helpermethods.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
-              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+            <state relative-caret-position="463">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Test/SignInTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="944">
+              <caret line="112" column="37" lean-forward="true" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,11 +126,11 @@
         <option value="$PROJECT_DIR$/src/test/java/help/helpermethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/Test/RegisterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/help/Helpermethods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Test/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/help/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Test/ShoppingbagTest.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Inputdata.properties" />
         <option value="$PROJECT_DIR$/src/test/java/Test/SignInTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/Inputdata.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/Test/ProductTest.java" />
       </list>
     </option>
   </component>
@@ -219,8 +222,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,7 +247,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SignInTest.Signin">
+  <component name="RunManager" selected="JUnit.ProductTest.product">
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Automationproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.ProductTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductTest.product" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Automationproject" />
       <extension name="coverage">
@@ -256,22 +274,6 @@
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.ProductTest" />
       <option name="METHOD_NAME" value="product" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductTest.registration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Automationproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.ProductTest" />
-      <option name="METHOD_NAME" value="registration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -327,11 +329,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductTest.product" />
         <item itemvalue="JUnit.SignInTest.Signin" />
         <item itemvalue="JUnit.ShoppingbagTest.Shoppingbag" />
-        <item itemvalue="JUnit.ProductTest.product" />
+        <item itemvalue="JUnit.ProductTest" />
         <item itemvalue="JUnit.RegisterTest.registration" />
-        <item itemvalue="JUnit.ProductTest.registration" />
       </list>
     </recent_temporary>
   </component>
@@ -349,42 +351,41 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.11 at 02h 25m 07s.xml">
+    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.12 at 06h 05m 27s.xml">
       <configuration name="ShoppingbagTest.Shoppingbag" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.11 at 03h 02m 33s.xml">
-      <configuration name="ShoppingbagTest.Shoppingbag" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.11 at 03h 03m 54s.xml">
-      <configuration name="ShoppingbagTest.Shoppingbag" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.11 at 03h 06m 11s.xml">
-      <configuration name="ShoppingbagTest.Shoppingbag" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.11 at 03h 07m 25s.xml">
-      <configuration name="ShoppingbagTest.Shoppingbag" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ShoppingbagTest_Shoppingbag - 2019.08.11 at 03h 08m 23s.xml">
-      <configuration name="ShoppingbagTest.Shoppingbag" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SignInTest_Signin - 2019.08.11 at 03h 41m 42s.xml">
+    <history-entry file="SignInTest_Signin - 2019.08.12 at 09h 55m 55s.xml">
       <configuration name="SignInTest.Signin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SignInTest_Signin - 2019.08.11 at 03h 43m 54s.xml">
+    <history-entry file="SignInTest_Signin - 2019.08.12 at 09h 56m 36s.xml">
       <configuration name="SignInTest.Signin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SignInTest_Signin - 2019.08.11 at 03h 46m 44s.xml">
+    <history-entry file="SignInTest_Signin - 2019.08.12 at 10h 00m 37s.xml">
       <configuration name="SignInTest.Signin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SignInTest_Signin - 2019.08.11 at 03h 50m 23s.xml">
+    <history-entry file="SignInTest_Signin - 2019.08.12 at 10h 01m 56s.xml">
       <configuration name="SignInTest.Signin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SignInTest_Signin - 2019.08.12 at 10h 03m 17s.xml">
+      <configuration name="SignInTest.Signin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_product - 2019.08.12 at 10h 05m 22s.xml">
+      <configuration name="ProductTest.product" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_product - 2019.08.12 at 10h 06m 34s.xml">
+      <configuration name="ProductTest.product" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_product - 2019.08.12 at 10h 08m 07s.xml">
+      <configuration name="ProductTest.product" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductTest_product - 2019.08.12 at 10h 09m 51s.xml">
+      <configuration name="ProductTest.product" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2758389" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28791946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -416,10 +417,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test/ShoppingbagTest.java</url>
-          <line>128</line>
+          <url>file://$PROJECT_DIR$/src/test/java/Test/ProductTest.java</url>
+          <line>180</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -458,13 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test/RegisterTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
@@ -475,9 +469,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/help/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="480">
           <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -485,10 +486,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Test/ProductTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/help/Helpermethods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="52" column="57" lean-forward="true" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
+        <state relative-caret-position="463">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -497,25 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test/ShoppingbagTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="134" column="68" lean-forward="true" selection-start-line="134" selection-start-column="68" selection-end-line="134" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Inputdata.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/help/Helpermethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="-704">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -524,8 +508,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Test/SignInTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+        <state relative-caret-position="944">
+          <caret line="112" column="37" lean-forward="true" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Inputdata.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="82" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
