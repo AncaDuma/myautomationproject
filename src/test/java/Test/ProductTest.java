@@ -19,10 +19,13 @@ public class ProductTest extends BaseTest {
 
     public void product () {
 
+        //validez pagina home page
+
         String expectedhomepage = BaseTest.getvalue("homepagetitle");
         functions.validatepagetitle(expectedhomepage, driver);
 
-        //solutie in caz de orice
+        //inchid pup-up-urile
+
         driver.navigate().refresh();
         try {
             Thread.sleep(2000);
@@ -31,9 +34,9 @@ public class ProductTest extends BaseTest {
         }
         driver.navigate().refresh();
 
-        //hover pe watches
+        //hover pe watches si selectez al 3-lea element din lista
 
-        WebElement watchesButton=driver.findElement(By.xpath("//a[@href=\"/us/en/watches.html\"]"));
+        WebElement watchesButton=driver.findElement(By.xpath("//li//a[@href='/us/en/watches.html']"));
         functions.hovermethod(watchesButton,driver);
 
 
@@ -47,17 +50,17 @@ public class ProductTest extends BaseTest {
             }
         }
 
-        //validez ca sunt pe rosegold page
+        //validez ca sunt pe pagina de produs din categoria selectata
 
         String expectedrose=BaseTest.getvalue("rosegoldtitle");
         functions.validatepagetitle(expectedrose,driver);
 
-        //click pe primul produs sau fac o lista?
+        //click pe primul produs de pe prima linie
 
         WebElement firstproduct=driver.findElement(By.xpath("//article[@data-productlist-index='0']"));
         functions.clickmethod(firstproduct);
 
-        //validez ca sunt pe pagina de produs
+        //validez ca sunt pe pagina de produs selectat
 
         String expectedproduct=BaseTest.getvalue("productpagetitle");
         functions.validatepagetitle(expectedproduct,driver);
@@ -65,7 +68,7 @@ public class ProductTest extends BaseTest {
         WebElement engravemebutton=driver.findElement(By.xpath("//button[@class=\"btn btn-default pdp-margin-bottom--small btn-product-customization\"]"));
         functions.clickmethod(engravemebutton);
 
-        //validez textul popup make it yours
+        //validez textul popup "make it yours"
 
         WebElement popupmakeityours=driver.findElement(By.xpath("//h4[contains(text(), \"Make it Yours\")]"));
         String expectedmessage1=BaseTest.getvalue("popuptitle");
@@ -85,7 +88,6 @@ public class ProductTest extends BaseTest {
         functions.validatetext(message,mesajeroare);
 
         //field completat cu caractere speciale
-        //validez mesajul de eroare
 
         WebElement line11web=driver.findElement(By.xpath("//input[@id='id-engraving-line-1']"));
         String field=BaseTest.getvalue("line1.1");
@@ -94,13 +96,15 @@ public class ProductTest extends BaseTest {
         functions.clickmethod(addengravingbutton);
         line11web.clear();
 
+        //validez mesajul de eroare
+
         String mesajeroare2=BaseTest.getvalue("mesajeroarecaracterespecialegravare");
         WebElement message1=driver.findElement(By.xpath("//span[@class='input-message parsley-asciisubset']"));
         functions.validatetext(message1,mesajeroare2);
 
-        line11web.clear(); //sterg fieldul completat
+        line11web.clear();
 
-        //completez fiedld-urile cu valori valide
+        //completez field-urile cu valori valide
 
         WebElement line1web=driver.findElement(By.xpath("//input[@id='id-engraving-line-1']"));
         String field1=BaseTest.getvalue("line1");
@@ -110,14 +114,20 @@ public class ProductTest extends BaseTest {
         String field2=BaseTest.getvalue("line2");
         functions.sendkeysmethod(line2web,field2);
 
+        WebElement line3web=driver.findElement(By.xpath("//input[@id='id-engraving-line-3']"));
+        String field3=BaseTest.getvalue("line3");
+        functions.sendkeysmethod(line3web,field3);
+
         WebElement choosefont=driver.findElement(By.xpath("//select[@id='id-engraving-font-type']"));
         String font=BaseTest.getvalue("font");
         functions.selectbyvaluedropdown(choosefont,font);
 
+        //preview cu gravarea
+
         WebElement previewbutton=driver.findElement(By.xpath("//button[@class='btn btn-default btn-block btn-customization--preview']"));
         functions.clickmethod(previewbutton);
 
-//        //validez imaginea gravata
+        //validez imaginea gravata
 
         WebElement imagewebelement = driver.findElement(By.xpath("//div[@class='item item-customization-preview active']/img[@class='img-responsive']"));
         functions.displayedmethod(imagewebelement);
@@ -126,11 +136,11 @@ public class ProductTest extends BaseTest {
 
         functions.clickmethod(addengravingbutton);
 
-//        //validez ca sunt inca pe pagina de produs
+        //validez ca sunt inca pe pagina de produs
 
         functions.validatepagetitle(expectedproduct,driver);
 
-//        //validez mesajul de gravare cum ca a fost adaugat
+        //validez mesajul de gravare cum ca a fost adaugat
 
         String mesajgravare=BaseTest.getvalue("mesajgravareadugata");
         WebElement mesajgravareweb=driver.findElement(By.xpath("//span[@class='btn-product-customization--success-message']"));
@@ -148,6 +158,7 @@ public class ProductTest extends BaseTest {
         functions.validatetext(removemessweb,removemessage);
 
         WebElement nobutton=driver.findElement(By.xpath("//div[@class='btn btn-group btn-group-justified']//button[@data-dismiss='modal']"));
+        new WebDriverWait(driver,6500).until(ExpectedConditions.visibilityOf(nobutton));
         functions.clickmethod(nobutton);
 
         //adaug in cos un produs
@@ -180,10 +191,6 @@ public class ProductTest extends BaseTest {
 
         WebElement closebutton=driver.findElement(By.xpath("//div[@class='modal-dialog 15']/div/div[@class='modal-header clearfix title-container']/button[@class='close']"));
         functions.clickmethod(closebutton);
-
-
-
-
 
     }
 }

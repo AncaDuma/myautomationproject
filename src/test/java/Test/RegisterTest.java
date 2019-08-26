@@ -33,20 +33,6 @@ public class RegisterTest extends BaseTest {
         driver.navigate().refresh();
 
 
-//        WebElement closebutton1=driver.findElement(By.xpath("//div[@id='unsupported-country-modal']//div[@class='modal-header']/button[@data-dismiss='modal']/span[@class='fa fa-close']"));
-//        new WebDriverWait(driver,6500).until(ExpectedConditions.visibilityOf(closebutton1));
-//        functions.clickmethod(closebutton1);
-//
-//        try {
-//            WebElement closebutton2 = driver.findElement(By.xpath("//*[@id=\"sign-up\"]/div/div/div[1]/button"));
-//            new WebDriverWait(driver, 10000).until(ExpectedConditions.visibilityOf(closebutton2));
-//            functions.clickmethod(closebutton2);
-//        }
-//        catch(NoSuchElementException e)
-//        {
-//            driver.navigate().refresh();
-//        }
-
         WebElement myaccountButton=driver.findElement(By.xpath("//div[@class='dropdown dropdown-mega dropdown-account text-center pull-left utilLink']//span[contains(text(),'My Account')]"));
         functions.hovermethod(myaccountButton,driver);
         Actions action=new Actions(driver);

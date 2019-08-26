@@ -13,7 +13,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
-//    public WebDriver driver;
+    //  public WebDriver driver;
     public static Properties property;
     public FileInputStream file;
     public WebDriver driver;
@@ -26,20 +26,6 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.get("https://www.fossil.com/us/en.html?borderFreeCountry=n");
         driver.manage().window().maximize();
-
-
-
-     //open chrome in an incognito mode
-
-//        DesiredCapabilities capabilities=DesiredCapabilities.chrome();
-//        ChromeOptions options=new ChromeOptions();
-//        options.addArguments("--incognito");
-//        capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-//
-//        System.setProperty("webdriver.chrome.driver", "C:\\automation\\ChromeDriver\\chromedriver.exe");
-//        WebDriver driver=new ChromeDriver(capabilities);
-//        driver.manage().window().maximize();
-//        driver.get("https://www.fossil.com/us/en.html?borderFreeCountry=n");
 
         //Wait implicit
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
